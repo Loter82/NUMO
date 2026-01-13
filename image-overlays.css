@@ -16,13 +16,15 @@
     background-repeat: no-repeat;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     z-index: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
+    -webkit-transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Add gradient overlay for text readability */
@@ -52,17 +54,19 @@
 
 /* Cards with images need positioning and padding adjustments */
 .has-image {
-    position: relative;
+    position: relative !important;
     padding-top: 220px !important; /* Space for image */
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    overflow: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
 }
 
 /* Hover effect - zoom image */
 .has-image:hover .card-image-overlay {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05) translateZ(0) !important;
+    transform: scale(1.05) translateZ(0) !important;
 }
 
 /* Service Cards with Images */

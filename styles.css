@@ -448,16 +448,20 @@ ul {
     padding: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
     transition: all var(--transition-base);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
 }
 
 .info-card:hover {
     box-shadow: var(--shadow-lg);
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px) translateZ(0) !important;
+    transform: translateY(-4px) translateZ(0) !important;
 }
 
 .info-card.dark {
@@ -594,16 +598,20 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
 }
 
 .service-card:hover {
     box-shadow: var(--shadow-xl);
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px) translateZ(0) !important;
+    transform: translateY(-8px) translateZ(0) !important;
     border-color: var(--primary-color);
 }
 
@@ -688,17 +696,21 @@ ul {
     padding: var(--spacing-xl);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
 }
 
 .timeline-step .step-content:hover {
     border-color: var(--primary-color);
     box-shadow: var(--shadow-lg);
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px) translateZ(0) !important;
+    transform: translateX(10px) translateZ(0) !important;
 }
 
 .timeline-step .step-content h3 {
@@ -796,16 +808,20 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
 }
 
 .market-card:hover {
     box-shadow: var(--shadow-xl);
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px) translateZ(0) !important;
+    transform: translateY(-8px) translateZ(0) !important;
 }
 
 .market-icon {
@@ -845,17 +861,21 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
 }
 
 .partner-card:hover {
     background-color: white;
     box-shadow: var(--shadow-lg);
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px) translateZ(0) !important;
+    transform: translateY(-4px) translateZ(0) !important;
     border-color: var(--primary-color);
 }
 
@@ -893,16 +913,20 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
 }
 
 .use-case-card:hover {
     box-shadow: var(--shadow-xl);
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px) translateZ(0) !important;
+    transform: translateY(-8px) translateZ(0) !important;
     border-color: var(--primary-color);
 }
 
@@ -937,15 +961,19 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-perspective: 1000px !important;
+    perspective: 1000px !important;
 }
 
 .why-card:hover {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px) translateZ(0) !important;
+    transform: translateY(-8px) translateZ(0) !important;
     box-shadow: var(--shadow-xl);
 }
 

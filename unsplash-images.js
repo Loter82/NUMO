@@ -5,27 +5,37 @@
  */
 
 const UNSPLASH_IMAGES = {
-    // Services Section - Energy Solutions Images
+    // Services Section - Energy Solutions Images (6 cards)
     services: {
-        coordination: {
+        power: {
             url: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80',
-            alt: 'Project coordination and planning',
-            query: 'business meeting teamwork'
+            alt: 'Power generation',
+            query: 'wind turbines power generation'
         },
-        technical: {
-            url: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
-            alt: 'Technical engineering solutions',
-            query: 'solar panels engineering'
+        solar: {
+            url: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80',
+            alt: 'Solar energy PV systems',
+            query: 'solar panels field'
         },
-        sourcing: {
-            url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
-            alt: 'Supplier sourcing and logistics',
-            query: 'logistics supply chain'
+        storage: {
+            url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+            alt: 'Energy storage BESS',
+            query: 'battery energy storage'
         },
-        delivery: {
-            url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
-            alt: 'Delivery support and installation',
-            query: 'delivery installation support'
+        hybrid: {
+            url: 'https://images.unsplash.com/photo-1565883808524-bf5b5a27c236?w=800&q=80',
+            alt: 'Hybrid and backup solutions',
+            query: 'industrial facility hybrid'
+        },
+        coordination: {
+            url: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80',
+            alt: 'Project coordination and sourcing',
+            query: 'business team meeting coordination'
+        },
+        matching: {
+            url: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80',
+            alt: 'Supplier and client matching',
+            query: 'business handshake partnership'
         }
     },
 
@@ -146,15 +156,17 @@ const UNSPLASH_IMAGES = {
 };
 
 /**
- * Apply background images to service cards
+ * Apply background images to service cards (6 cards)
  */
 function applyServiceImages() {
     const serviceCards = document.querySelectorAll('.service-card');
     const images = [
+        UNSPLASH_IMAGES.services.power,
+        UNSPLASH_IMAGES.services.solar,
+        UNSPLASH_IMAGES.services.storage,
+        UNSPLASH_IMAGES.services.hybrid,
         UNSPLASH_IMAGES.services.coordination,
-        UNSPLASH_IMAGES.services.technical,
-        UNSPLASH_IMAGES.services.sourcing,
-        UNSPLASH_IMAGES.services.delivery
+        UNSPLASH_IMAGES.services.matching
     ];
 
     serviceCards.forEach((card, index) => {

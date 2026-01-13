@@ -23,11 +23,14 @@ html {
 .partner-card,
 .use-case-card,
 .why-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
     border: 2px solid #e2e8f0 !important;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    will-change: transform !important;
+}
 }
 
 /* Hover effects with scale and glow */
@@ -36,8 +39,8 @@ html {
 .partner-card:hover,
 .use-case-card:hover,
 .why-card:hover {
-    -webkit-transform: translateY(-10px) scale(1.02);
-    transform: translateY(-10px) scale(1.02);
+    -webkit-transform: translateY(-10px) scale(1.02) translateZ(0) !important;
+    transform: translateY(-10px) scale(1.02) translateZ(0) !important;
     box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2),
                 0 0 0 1px rgba(37, 99, 235, 0.1);
 }
@@ -47,6 +50,9 @@ html {
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
 }
 
 .btn::before {
@@ -69,8 +75,8 @@ html {
 }
 
 .btn:hover {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px) translateZ(0) !important;
+    transform: translateY(-2px) translateZ(0) !important;
     box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
 }
 
