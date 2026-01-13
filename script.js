@@ -8,18 +8,28 @@ const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
 
 // Mobile menu toggle
-navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active');
-    navMenu.classList.toggle('active');
-    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
-});
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Nav toggle clicked'); // Debug
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        console.log('Nav menu active:', navMenu.classList.contains('active')); // Debug
+    });
+} else {
+    console.error('navToggle or navMenu not found');
+}
 
 // Close mobile menu when clicking on links
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-        document.body.style.overflow = '';
+        if (navToggle && navMenu) {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     });
 });
 

@@ -299,6 +299,9 @@ ul {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    z-index: 1001;
+    position: relative;
+    pointer-events: auto;
 }
 
 .nav-toggle span {
@@ -307,6 +310,7 @@ ul {
     background-color: var(--text-dark);
     border-radius: 2px;
     transition: all var(--transition-base);
+    pointer-events: none;
 }
 
 .nav-toggle.active span:nth-child(1) {
@@ -1220,14 +1224,28 @@ ul {
         padding: var(--spacing-xl);
         box-shadow: var(--shadow-lg);
         transition: left var(--transition-slow);
+        z-index: 999;
+        overflow-y: auto;
     }
     
     .nav-menu.active {
         left: 0;
     }
     
+    .nav-menu li {
+        width: 100%;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .nav-link {
+        display: block;
+        padding: var(--spacing-sm);
+        font-size: var(--font-size-lg);
+    }
+    
     .nav-toggle {
         display: flex;
+        z-index: 1000;
     }
     
     .header .btn-primary {
