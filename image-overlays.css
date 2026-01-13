@@ -1,5 +1,6 @@
 /**
  * Card Image Overlay Styles for Unsplash Integration
+ * Safari-compatible fixes included
  */
 
 /* Image overlay for all cards */
@@ -8,13 +9,20 @@
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     height: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     z-index: 0;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Add gradient overlay for text readability */
@@ -25,6 +33,14 @@
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(255, 255, 255, 0.95) 100%
+    );
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.1) 0%,
@@ -39,10 +55,13 @@
     position: relative;
     padding-top: 220px !important; /* Space for image */
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 /* Hover effect - zoom image */
 .has-image:hover .card-image-overlay {
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -57,8 +76,14 @@
     background: white;
     width: 60px;
     height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     border-radius: 50%;
     margin: 0 auto var(--spacing-md);
@@ -83,8 +108,14 @@
     background: white;
     width: 80px;
     height: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     border-radius: 50%;
     margin: 0 auto var(--spacing-md);
@@ -108,8 +139,14 @@
     background: white;
     width: 60px;
     height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     border-radius: 50%;
     margin: 0 auto var(--spacing-md);

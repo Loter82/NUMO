@@ -448,10 +448,15 @@ ul {
     padding: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
     transition: all var(--transition-base);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .info-card:hover {
     box-shadow: var(--shadow-lg);
+    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
 }
 
@@ -482,7 +487,11 @@ ul {
 }
 
 .feature-item {
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
     align-items: flex-start;
     gap: var(--spacing-sm);
 }
@@ -493,9 +502,16 @@ ul {
     background-color: var(--primary-color);
     color: white;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     font-size: var(--font-size-sm);
     font-weight: 700;
@@ -578,10 +594,15 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .service-card:hover {
     box-shadow: var(--shadow-xl);
+    -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
     border-color: var(--primary-color);
 }
@@ -637,19 +658,29 @@ ul {
     z-index: 1;
     width: 64px;
     height: 64px;
+    background: -webkit-linear-gradient(135deg, var(--primary-color), var(--primary-light));
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
     color: white;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     font-size: var(--font-size-2xl);
     font-weight: 700;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
 }
 
 .timeline-step .step-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
     flex: 1;
     background: white;
     border: 2px solid var(--border-color);
@@ -657,11 +688,16 @@ ul {
     padding: var(--spacing-xl);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .timeline-step .step-content:hover {
     border-color: var(--primary-color);
     box-shadow: var(--shadow-lg);
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
 }
 
@@ -760,10 +796,15 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .market-card:hover {
     box-shadow: var(--shadow-xl);
+    -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
 }
 
@@ -804,11 +845,16 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .partner-card:hover {
     background-color: white;
     box-shadow: var(--shadow-lg);
+    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
     border-color: var(--primary-color);
 }
@@ -847,10 +893,15 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .use-case-card:hover {
     box-shadow: var(--shadow-xl);
+    -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
     border-color: var(--primary-color);
 }
@@ -876,6 +927,7 @@ ul {
 }
 
 .why-card {
+    background: -webkit-linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
     color: white;
     border-radius: var(--radius-lg);
@@ -885,9 +937,14 @@ ul {
     overflow-wrap: break-word;
     hyphens: auto;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .why-card:hover {
+    -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
     box-shadow: var(--shadow-xl);
 }
