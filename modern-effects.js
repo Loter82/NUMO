@@ -192,8 +192,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Add CSS for ripple effect dynamically
-const style = document.createElement('style');
-style.textContent = `
+const modernEffectsStyle = document.createElement('style');
+modernEffectsStyle.textContent = `
     .ripple {
         position: absolute;
         border-radius: 50%;
@@ -219,4 +219,4 @@ style.textContent = `
         opacity: 1;
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(modernEffectsStyle);

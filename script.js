@@ -197,8 +197,8 @@ function showNotification(message, type = 'success') {
 }
 
 // Add notification animations
-const style = document.createElement('style');
-style.textContent = `
+const notificationStyle = document.createElement('style');
+notificationStyle.textContent = `
     @keyframes slideInRight {
         from {
             transform: translateX(400px);
@@ -221,7 +221,7 @@ style.textContent = `
         }
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(notificationStyle);
 
 // ===========================
 // Intersection Observer for Animations
