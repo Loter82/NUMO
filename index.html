@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NUMO - Independent Energy Solutions Coordinator connecting clients, suppliers and technologies to deliver reliable power, solar and hybrid energy solutions across Europe, Ukraine and Africa.">
+    <title>NUMO - Independent Energy Solutions Coordinator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modern-effects.css">
+    <link rel="stylesheet" href="image-overlays.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="translations.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a href="#home">NUMO</a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#process" class="nav-link" data-i18n="nav_process">Process</a></li>
+                    <li><a href="#markets" class="nav-link" data-i18n="nav_markets">Markets</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
+                    <li class="nav-lang">
+                        <button class="lang-button" id="langButton">
+                            <span id="currentLangText">EN</span>
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <ul class="lang-dropdown" id="langDropdown">
+                            <li><a href="#" data-lang="en">EN</a></li>
+                            <li><a href="#" data-lang="fr">FR</a></li>
+                            <li><a href="#" data-lang="de">DE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <a href="#contact" class="btn btn-primary" data-i18n="nav_contact">Contact Us</a>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">Energy Solutions</div>
+                <h1 class="hero-title" data-i18n="hero_title">We Coordinate Energy Solutions — Not Just Equipment</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Independent Energy Solutions Coordinator connecting clients, suppliers and technologies to deliver reliable power, solar and hybrid energy solutions across Europe, Ukraine and Africa.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-large btn-primary" data-i18n="hero_btn_primary">Discuss a Project</a>
+                    <a href="#services" class="btn btn-large btn-secondary" data-i18n="hero_btn_secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="hero_scroll">Scroll to explore</span>
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
+                <path d="M8 1V19M8 19L1 12M8 19L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 data-i18n="about_title">About NUMO</h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">We act as an independent Energy Solutions Coordinator and Project Connector.</p>
+            </div>
+
+            <!-- Our Role -->
+            <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                <h3 data-i18n="about_role_title">Our Role as Energy Solutions Coordinator</h3>
+                <p data-i18n="about_content_1">Our role is to structure energy projects, align technical solutions, source reliable suppliers and coordinate all key parties — from initial requirements to delivery support.</p>
+                <p data-i18n="about_role_desc">Modern energy projects often involve multiple stakeholders, technologies and regions. Our role is to act as a neutral coordination layer between clients, suppliers, contractors and logistics partners.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <p data-i18n="about_role_1">Technical solutions match real operational needs</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <p data-i18n="about_role_2">Suppliers are suitable and verified</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <p data-i18n="about_role_3">Commercial and logistical aspects are aligned</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <p data-i18n="about_role_4">Projects remain structured and transparent</p>
+                    </div>
+                </div>
+                
+                <p class="highlight" data-i18n="about_highlight_1">We do not sell equipment directly. We coordinate energy solutions.</p>
+            </div>
+
+            <!-- Why Coordination Matters -->
+            <div class="info-card dark">
+                <h3 data-i18n="about_why_title">Why Coordination Matters</h3>
+                <p data-i18n="about_why_desc">In many energy projects, the main risks arise not from technology itself, but from misalignment between requirements, suppliers and execution.</p>
+                <p data-i18n="about_why_reduce">By acting as an independent coordinator, we help reduce:</p>
+                
+                <ul class="benefits-list">
+                    <li data-i18n="about_why_1">Technical mismatches</li>
+                    <li data-i18n="about_why_2">Procurement risks</li>
+                    <li data-i18n="about_why_3">Supplier dependency</li>
+                    <li data-i18n="about_why_4">Communication gaps between regions</li>
+                </ul>
+                
+                <p class="emphasis" data-i18n="about_why_focus">Our focus is on reliability, clarity and long-term performance.</p>
+            </div>
+
+            <!-- Our Approach & Values -->
+            <div class="two-column-grid">
+                <div class="info-card">
+                    <h3 data-i18n="about_approach_title">Our Approach</h3>
+                    <ul class="check-list">
+                        <li data-i18n="about_approach_1">Requirements-driven, not product-driven</li>
+                        <li data-i18n="about_approach_2">Independent supplier sourcing</li>
+                        <li data-i18n="about_approach_3">Clear documentation and process logic</li>
+                        <li data-i18n="about_approach_4">Structured communication</li>
+                        <li data-i18n="about_approach_5">Adaptation to regional standards and conditions</li>
+                        <li data-i18n="about_approach_6">Focus on feasibility and operational reality</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3 data-i18n="about_values_title">Values & Principles</h3>
+                    <ul class="check-list">
+                        <li data-i18n="about_values_1">Independence and neutrality</li>
+                        <li data-i18n="about_values_2">Transparency in coordination</li>
+                        <li data-i18n="about_values_3">Responsibility for decisions and recommendations</li>
+                        <li data-i18n="about_values_4">Respect for regional specifics</li>
+                        <li data-i18n="about_values_5">Long-term partnership mindset</li>
+                        <li data-i18n="about_values_6">Compliance and documentation-first approach</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="info-card">
+                <h3 data-i18n="about_experience_title">Experience & Context</h3>
+                <p data-i18n="about_experience_1">Our experience is built across multiple regions and project environments — from structured European procurement to complex and developing markets.</p>
+                <p data-i18n="about_experience_2">We work with manufacturers, distributors, EPC contractors and local partners to ensure that energy solutions are practical, reliable and suited to real-world conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="services_title">Services & Solutions</h2>
+                <p class="section-subtitle" data-i18n="services_subtitle">We provide independent coordination and sourcing services for power generation, solar and hybrid energy projects.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 data-i18n="service_1_title">Power Generation</h3>
+                    <p data-i18n="service_1_desc">Generator-based power solutions for industrial, commercial and infrastructure applications — backup, prime and continuous power scenarios.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 data-i18n="service_2_title">Solar Energy (PV Systems)</h3>
+                    <p data-i18n="service_2_desc">Photovoltaic solutions for on-grid, off-grid and hybrid applications, ensuring system design matches real operating conditions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 data-i18n="service_3_title">Energy Storage (BESS)</h3>
+                    <p data-i18n="service_3_desc">Battery and energy storage solutions for backup power, load balancing and hybrid energy systems.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 data-i18n="service_4_title">Hybrid & Backup Solutions</h3>
+                    <p data-i18n="service_4_desc">Integrated systems combining generators, solar PV and energy storage for reliability and operational flexibility.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 data-i18n="service_5_title">Project Coordination & Sourcing</h3>
+                    <p data-i18n="service_5_desc">Independent coordination layer between clients, suppliers, contractors and logistics partners.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 data-i18n="service_6_title">Supplier & Client Matching</h3>
+                    <p data-i18n="service_6_desc">Connecting verified suppliers and manufacturers with suitable B2B clients and projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="process_title">How We Work</h2>
+                <p class="section-subtitle" data-i18n="process_subtitle">Energy projects require clear structure, coordination and accountability. Our 5-step process ensures alignment from start to finish.</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process_step_1_title">Requirements Analysis</h3>
+                        <p data-i18n="process_step_1_desc">We start by understanding the technical, operational and regional requirements of the project.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process_step_2_title">Solution Design</h3>
+                        <p data-i18n="process_step_2_desc">Based on the requirements, we define suitable solution concepts.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process_step_3_title">Supplier Sourcing & Verification</h3>
+                        <p data-i18n="process_step_3_desc">We identify and evaluate suitable manufacturers, distributors and partners.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process_step_4_title">Coordination & Alignment</h3>
+                        <p data-i18n="process_step_4_desc">We coordinate communication between all involved parties.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process_step_5_title">Project Support & Handover</h3>
+                        <p data-i18n="process_step_5_desc">We support the project through delivery and handover phases.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Benefits -->
+            <div class="process-benefits">
+                <h3 data-i18n="process_benefits_title">What This Process Delivers</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item" data-i18n="process_benefit_1">Reduced technical and procurement risks</div>
+                    <div class="benefit-item" data-i18n="process_benefit_2">Clearer decision-making</div>
+                    <div class="benefit-item" data-i18n="process_benefit_3">Better supplier fit</div>
+                    <div class="benefit-item" data-i18n="process_benefit_4">Fewer delays and misunderstandings</div>
+                    <div class="benefit-item" data-i18n="process_benefit_5">Transparent and documented coordination</div>
+                </div>
+            </div>
+
+            <!-- Working Formats -->
+            <div class="info-card">
+                <h3 data-i18n="process_formats_title">Working Formats</h3>
+                <p data-i18n="process_formats_desc">Depending on project scope and requirements, we can work in different formats:</p>
+                <ul class="formats-list">
+                    <li data-i18n="process_format_1">Full project coordination (from requirements to delivery)</li>
+                    <li data-i18n="process_format_2">Supplier sourcing and verification only</li>
+                    <li data-i18n="process_format_3">Technical consulting and feasibility support</li>
+                    <li data-i18n="process_format_4">One-time advisory or second opinion</li>
+                </ul>
+                <p class="emphasis" data-i18n="process_formats_note">The format is defined together based on your specific needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Markets Section -->
+    <section class="markets" id="markets">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="markets_title">Markets We Work In</h2>
+                <p class="section-subtitle" data-i18n="markets_subtitle">We operate across multiple regions, adapting solutions to local standards, logistics and project conditions.</p>
+            </div>
+            
+            <div class="markets-grid">
+                <div class="market-card">
+                    <h3 data-i18n="market_1_title">Europe</h3>
+                    <p data-i18n="market_1_desc">Compliance-driven markets with structured procurement and high technical standards.</p>
+                </div>
+                
+                <div class="market-card">
+                    <h3 data-i18n="market_2_title">Ukraine</h3>
+                    <p data-i18n="market_2_desc">Post-conflict reconstruction, energy independence and resilience-focused projects.</p>
+                </div>
+                
+                <div class="market-card">
+                    <h3 data-i18n="market_3_title">Africa</h3>
+                    <p data-i18n="market_3_desc">Off-grid solutions, industrial power and infrastructure development in emerging markets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="partners_title">Partners</h2>
+                <p class="section-subtitle" data-i18n="partners_subtitle">Reliable energy projects require strong cooperation between multiple stakeholders. We work with a network of manufacturers, distributors, contractors and logistics partners.</p>
+            </div>
+            
+            <h3 class="partners-title" data-i18n="partners_network_title">Our Partner Network</h3>
+            
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <h4 data-i18n="partner_1_title">Manufacturers</h4>
+                    <p data-i18n="partner_1_desc">We cooperate with equipment manufacturers producing generators, solar components and energy storage systems. Our role is to align technical requirements with manufacturing capabilities and project needs.</p>
+                </div>
+                
+                <div class="partner-card">
+                    <h4 data-i18n="partner_2_title">Distributors & Suppliers</h4>
+                    <p data-i18n="partner_2_desc">We work with regional and international distributors to ensure availability, logistics feasibility and commercial alignment.</p>
+                </div>
+                
+                <div class="partner-card">
+                    <h4 data-i18n="partner_3_title">EPC & Contractors</h4>
+                    <p data-i18n="partner_3_desc">For implementation and installation, we coordinate with EPC companies and technical contractors.</p>
+                </div>
+                
+                <div class="partner-card">
+                    <h4 data-i18n="partner_4_title">Logistics & Freight Partners</h4>
+                    <p data-i18n="partner_4_desc">We cooperate with logistics partners to support transportation, customs and delivery coordination, especially for cross-border and remote projects.</p>
+                </div>
+                
+                <div class="partner-card">
+                    <h4 data-i18n="partner_5_title">Local Representatives</h4>
+                    <p data-i18n="partner_5_desc">In specific regions, we collaborate with local partners who provide on-the-ground support and regional expertise.</p>
+                </div>
+            </div>
+
+            <!-- Partnership Principles -->
+            <div class="info-card">
+                <h3 data-i18n="partners_principles_title">Partnership Principles</h3>
+                <ul class="check-list">
+                    <li data-i18n="partners_principle_1">Transparency and clear roles</li>
+                    <li data-i18n="partners_principle_2">Structured communication</li>
+                    <li data-i18n="partners_principle_3">Alignment on technical and commercial expectations</li>
+                    <li data-i18n="partners_principle_4">Long-term cooperation mindset</li>
+                    <li data-i18n="partners_principle_5">Respect for regional and cultural specifics</li>
+                </ul>
+                <p class="emphasis" data-i18n="partners_principles_note">We are open to cooperation with manufacturers, distributors and project partners who value structured coordination and professional engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases / Projects Section -->
+    <section class="use-cases" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="usecases_title">Use Cases & Project Types</h2>
+                <p class="section-subtitle" data-i18n="usecases_subtitle">Real-world scenarios where coordination, sourcing and structured solutions deliver results.</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <h3 data-i18n="usecase_1_title">Industrial Backup Power</h3>
+                    <p data-i18n="usecase_1_desc">Manufacturing facility requires reliable backup for critical production lines during grid outages.</p>
+                </div>
+                
+                <div class="use-case-card">
+                    <h3 data-i18n="usecase_2_title">Hybrid Office Complex</h3>
+                    <p data-i18n="usecase_2_desc">Office building combining solar, battery storage and grid connection for energy independence.</p>
+                </div>
+                
+                <div class="use-case-card">
+                    <h3 data-i18n="usecase_3_title">Agricultural Off-Grid</h3>
+                    <p data-i18n="usecase_3_desc">Remote farm operation requiring solar + diesel hybrid system for irrigation and processing.</p>
+                </div>
+                
+                <div class="use-case-card">
+
+                    <h3 data-i18n="usecase_4_title">Construction Site Power</h3>
+                    <p data-i18n="usecase_4_desc">Temporary but reliable power supply for multi-year infrastructure development project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="whyus_title">Why Work With Us</h2>
+            </div>
+            
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <h3 data-i18n="why_1_title">Independent & Neutral</h3>
+                    <p data-i18n="why_1_desc">We are not tied to specific brands or manufacturers — our recommendations are based on your requirements, not our inventory.</p>
+                </div>
+                
+                <div class="why-card">
+                    <h3 data-i18n="why_2_title">Multi-Region Experience</h3>
+                    <p data-i18n="why_2_desc">We understand the differences between European compliance, Ukrainian reconstruction and African infrastructure markets.</p>
+                </div>
+                
+                <div class="why-card">
+                    <h3 data-i18n="why_3_title">Coordination-First Approach</h3>
+                    <p data-i18n="why_3_desc">We reduce risks by aligning all parties before commitments, not after problems arise.</p>
+                </div>
+                
+                <div class="why-card">
+                    <h3 data-i18n="why_4_title">Transparent & Structured</h3>
+                    <p data-i18n="why_4_desc">Clear documentation, defined processes and open communication throughout the project lifecycle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_q1">Do you sell equipment directly?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a1">No. We do not sell generators, solar panels or batteries directly. Our role is to coordinate energy solutions — which includes sourcing, supplier verification, technical alignment and project coordination.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_q2">How do you select suppliers?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a2">We evaluate suppliers based on technical capability, compliance documentation, delivery track record and suitability for specific project requirements. We maintain independence and do not favor any single manufacturer.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_q3">What regions do you operate in?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a3">We primarily work across Europe (EU compliance markets), Ukraine (reconstruction & resilience projects) and Africa (off-grid & industrial power). We adapt solutions to regional standards and logistics.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_q4">How long does the coordination process take?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a4">It depends on project complexity. Simple requirements analysis and supplier sourcing may take 1-2 weeks. Full project coordination from requirements to delivery support can range from weeks to months.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_q5">Do you provide installation or EPC services?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a5">We do not provide direct installation or EPC services. However, we can coordinate with local EPC contractors, align technical specifications and support the handover process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_title">Get In Touch</h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">Ready to discuss your energy project? Send us your requirements and we'll get back to you within 24-48 hours.</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact_name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact_email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company" data-i18n="contact_company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectType" data-i18n="contact_project_type">Project Type</label>
+                        <select id="projectType" name="projectType">
+                            <option value="" data-i18n="contact_project_select">Select...</option>
+                            <option value="power-generation" data-i18n="contact_project_1">Power Generation</option>
+                            <option value="solar-energy" data-i18n="contact_project_2">Solar Energy</option>
+                            <option value="energy-storage" data-i18n="contact_project_3">Energy Storage</option>
+                            <option value="hybrid-system" data-i18n="contact_project_4">Hybrid System</option>
+                            <option value="other" data-i18n="contact_project_5">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message" data-i18n="contact_message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large" data-i18n="contact_send">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3 data-i18n="contact_direct">Direct Contact:</h3>
+                    <div class="contact-item">
+                        <strong data-i18n="contact_email_label">Email:</strong>
+                        <a href="mailto:info@numo-energy.com">info@numo-energy.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong data-i18n="contact_phone_label">Phone:</strong>
+                        <a href="tel:+49XXXXXXXX">+49 XXX XXXX XXXX</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>NUMO</h3>
+                    <p data-i18n="footer_tagline">Independent Energy Solutions Coordinator</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 data-i18n="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="nav_about">About</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#process" data-i18n="nav_process">Process</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="#privacy" data-i18n="footer_privacy">Privacy Policy</a></li>
+                        <li><a href="#terms" data-i18n="footer_terms">Terms of Service</a></li>
+                        <li><a href="#imprint" data-i18n="footer_imprint">Imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2024 NUMO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="i18n.js"></script>
+    <script src="modern-effects.js"></script>
+    <script src="unsplash-images.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

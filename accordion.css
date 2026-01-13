@@ -1,0 +1,209 @@
+/**
+ * Accordion Styles for Process Section
+ */
+
+/* Hint text */
+.process-hint {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: var(--spacing-md);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Process Steps - Centered and Compact */
+.process-steps {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Accordion Step */
+.accordion-step {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.accordion-step:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.accordion-step.active {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Step Header - Clickable */
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: white;
+    transition: background 0.3s ease;
+}
+
+.accordion-step:hover .step-header {
+    background: #f8f9fa;
+}
+
+.step-header .step-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.step-header h3 {
+    flex: 1;
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.step-toggle {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    line-height: 1;
+}
+
+.accordion-step.active .step-toggle {
+    transform: rotate(45deg);
+}
+
+/* Step Content - Collapsible */
+.accordion-step .step-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+}
+
+.accordion-step.active .step-content {
+    max-height: 1000px;
+    padding: 0 var(--spacing-lg) var(--spacing-xl) var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+.step-content p {
+    margin: var(--spacing-md) 0;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.step-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.step-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+}
+
+.step-content ul li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.step-note {
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: #f8f9fa;
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Process Benefits - More Compact */
+.process-benefits {
+    margin-top: var(--spacing-2xl);
+    text-align: center;
+}
+
+.process-benefits h3 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    background: var(--primary-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .step-header {
+        padding: var(--spacing-md);
+    }
+    
+    .step-header .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .step-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .step-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+    
+    .process-hint {
+        font-size: 1rem;
+    }
+}
