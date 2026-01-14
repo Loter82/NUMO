@@ -17,7 +17,7 @@ html {
 }
 
 /* Glassmorphism for cards */
-.info-card,
+.info-card:not(.dark),
 .service-card,
 .market-card,
 .partner-card,
@@ -30,6 +30,14 @@ html {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
     position: relative !important;
     will-change: transform !important;
+}
+
+/* Dark card override for glassmorphism */
+.info-card.dark {
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: none !important;
 }
 }
 
